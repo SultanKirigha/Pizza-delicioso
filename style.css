@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgba(0,0,0,.5);
 }
 @import "compass/css3";
 
@@ -22,14 +23,14 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.5);
 }
 .banner__container{
   position: relative;
   transform: translateY(-50%);
   top: 50%;
   text-align: center;
-  color: #fff;
+  color:grey;
+  font-size: 1.5em;
 }
 
 .banner__hero{
@@ -37,7 +38,7 @@ body{
   font-weight: 300;
   font-size: 3em;
   text-align: center;  
-  color: #fff;
+  color:grey;
   margin-bottom: 5px;
 }
 
@@ -56,77 +57,6 @@ body{
     background-size: 100%;
     transition: background 0.5s ease-in-out;
     }
-}
-nav {  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  background-color:tomato;
-  border-radius: 4px;
-  box-shadow: 0 3px 0 0 tomato_dark;
-}  
-.nav-button{
-    display: none;
-    padding: 10px;
-    color: #fff;
-    background-color: tomato;
-    text-align: center;
-    font-size: 1.5em;
-    cursor: pointer;
-}   
-.nav-button:hover {
-    color: #eee;
-}
-.nav{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    background: red-tomato;
-    margin: 0 auto ;
-    padding: 0 40px;
-    height: initial;
-    transition: height .3s ease;
-}
-.nav > li {
-    list-style: none;
-}   
-.nav > a {
-      display: block;  
-      font-family: "josefin sans";
-      font-size: 20px;
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 30px 15px;
-}
-.nav:hover a {
-      background: tomato;
-      color: #f7f7f7;
-}
-.nav:hover > .nav__sub {
-      display: flex;
-      flex-direction: column;
-}
-.nav__sub{
-  display: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  background: tomato;
-}  
-.nav > li {
-     display: flex;
-     position: relative;
-}    
-.nav > a {
-      padding: 15px 60px;
-      font-size: 15px;
-      flex: 1 1 auto;
-}      
-.nav:hover {
-        background: rotten-tomatoes;
 }
 .welcome {
   height: 100vh;
@@ -153,21 +83,21 @@ nav {
 .nav {
     border-radius: 0;    
 }
-    &.visible {
-      .nav {
-        height: initial;
-        overflow: initial;
-        transition: height .3s ease;
-        flex: 1 1 auto;
-      }
-    }
-    .nav-button {
+.nav.visible {
+
+}
+.nav {
+    height: initial;
+    overflow: initial;
+    transition: height .3s ease;
+    flex: 1 1 auto;
+}
+.nav-button {
       display: inline-flex;
       flex: 1 1 auto;
-    }
-  }
+}
   
-  .nav {
+.nav {
     height: 0;
     width: 100%;
     overflow: hidden;
@@ -177,31 +107,27 @@ nav {
     padding: 0;
     flex-wrap: nowrap;
     align-content: stretch;
-    
-    li {
-      width: 100%;
-      &:hover .nav__sub {
+}    
+.nav.li {
+      width: 100%;}
+.nav:hover .nav__sub {
         display: flex;
         flex-direction: column;
       }
-      a {
+nav.a {
         text-align: center;
       }
     }
-  }
-  
- .nav__sub {
+.nav__sub {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
     align-content: stretch;
     position: initial;
-   
-    li {
-      flex: 0 1 auto;
-    }
-  }
+}   
+.nav.li {
+    flex: 0 1 auto;
 }
 
 .button {
@@ -215,20 +141,18 @@ nav {
   text-decoration: none;
   color: #333;
   transition: background-color .5s ease;
-  &:hover,
-  &:active {
+}
+.button.b:hover,:active {
     color: #fff;
     background-color: darken(#eee, 50%);
     transition: background-color .5s ease;
   }
-  
-  &--primary {
-    background-color: $red-tomato;
+.button-button--primary {
+    background-color: red-tomato;
     color: #fff;
-    
-    &:hover,
-    &:active {
-      background-color: darken($red-tomato, 10%);
+}   
+.button:hover,:active {
+      background-color: darken(red-tomato, 10%);
       color: #eee;
     }
   }
