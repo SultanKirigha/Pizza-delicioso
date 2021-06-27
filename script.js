@@ -1,9 +1,16 @@
-// // welcome to Tomato's Pizzaria v2.0 with SASS
-// const button = document.querySelector('.nav-button');
-// const menu = document.querySelector('nav');
-// button.addEventListener('click', () => {
-//   menu.classList.toggle('visible');
-// });
-$(".large").click(function(){
-    $("#LargeInput").show();
-});
+let clientsDetails =[];
+const details = (ev)=>{
+    ev.preventDefault();
+    let Pizza ={
+        size: document.getElementById("#exampleFormControlSelect1").value,
+        fName: document.getElementById("#firstName").value,
+        lName: document.getElementById("#lastName").value,
+        eMail: document.getElementById("#emailAddress").value,
+        pType: document.getElementById("#pizzaType").value,
+        topping: document.getElementById("#Toppings").value,
+    console.log(Pizza)
+}
+    clientsDetails.push(Pizza);
+    document.forms[0].reset();
+   
+}

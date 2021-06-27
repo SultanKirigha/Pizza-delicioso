@@ -25,35 +25,39 @@
         <div id="inputs" style="background-image: url(images/photo-1542282811-943ef1a977c3.jpeg); background-repeat:no-repeat;width: 153%;height: 100vh;">
         <div>
       <center><form name="input" action="#" method="post" style="margin-left: 16%;background-color:#211e1e;color:white;border-radius:5px;height:81vh;width:450px;">
-        <h1 style="font-family:Cabin Sketch;font-size:80px;">Order</h1>
-        <select class="form-control" id="exampleFormControlSelect1" style="width: 100%;height: 5%;margin-top: -3%;margin-left: -74px;position: absolute;">
+        <h1 style="font-family:Cabin Sketch;font-size:80px;">Order🍕</h1>
+        <select class="form-control" id="exampleFormControlSelect1" style="width: 100%;height: 5%;margin-top: -3%;margin-left: -225px;position: absolute;">
               <option>Small</option>
               <option>Medium</option>
               <option>Large</option>
             </select>
-        First name:<input type="text" name="First" placeholder="John"style="font-family:Waiting for the Sunrise;font-size:17px;font-weight:bold;"><br/>
-        Last name:<input type="text" name="lastname" placeholder="Smith"style="font-family:Waiting for the Sunrise;font-size:17px;font-weight:bold"></br> 
-        Email Address:<input type="email" name="email" placeholder="County & Constituency" style="width:50%;height:5%;margin-left:0%;">
        <br/>
        <div class="form-group">
-        <label for="exampleFormControlSelect2">Select Pizza Type</label></br>
+        <label id="pizzaType"for="exampleFormControlSelect2">Select Pizza Type</br>
           <input type='checkbox' checked>Peperoni</br>
           <input type='checkbox'>Cappricciosa</br>
           <input type='checkbox'>Beef</br>
           <input type='checkbox'>Hauweian</br>
           <input type='checkbox'>Chicken</br>
         </select>
+        </label>
       </div>
           <p>Pizza toppings (Check all that apply)</p>
+          <select id="Toppings">
           <input type='checkbox' checked> Crispy
           <input type='checkbox'>Stuffed
           <input type='checkbox'>Gluten-free
+        </select>
           <p>Comments:</br></p>
             <textarea style="width: 80%; height: 10%;margin-left: -7%;"></textarea>
             <p></p>
             <label for="number">Number of Pizza's</label></br>
             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required="" style="width: 100%;height: 4%;margin-top: 1%;margin-left: -196pxposition: absolute;">
-            <input type="submit" value="Submit" href="#" style="margin-top: 20px;">
+            <div class="checkBox">
+              <input type="checkbox" name="Delivery">
+              <label for="Delivery"> I want my Pizza Delivered</label>
+            </div></br>
+            <input id="submit" type="submit" value="Submit" href="#" style="margin-top: 20px;">
       </form>
       </div>
       </div>
