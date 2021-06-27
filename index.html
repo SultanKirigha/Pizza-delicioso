@@ -12,23 +12,51 @@
         <div class="banner__overlay">
           <div class="banner__container">
             <h1 class="banner__hero">PIZZA-DELICIOSO</h1>
-            <p class="banner__text">get the most yummy pizza of all times! </p>
-            <div><a href="#" class="button button--primary">Order Now 🍕</a></div>
-          </div>
+            <p class="banner__text"style='color:white;font-size:1em;font-weight:bold;'> Yummy pizza all times🤤 </p>
         </div>
       </header>
       
       <!-- content -->
       <main>
         <section class="welcome">
-          <h1 class="welcome__title">Welcome to PIZZA-DELICIOSO </h1>
-        </section>
+          <h1 class="welcome__title">Welcome to PIZZA-DELICIOSO</h1>
       </main>
-      <div class="Pizza_Size"style="margin-left: 35%; margin-top: -45%;">
-          <button style="width: 50%;height: 10%;border-radius: 2em;position: absolute;margin-top: 3%;margin-left: -10%;background-color: #24662A;color: rgba(0,0,0,.5);font-size: 1.5em;border-style: solid;">Large 🍕</button>  
-          <button style="width: 50%;height: 10%;border-radius: 2em;position: absolute;margin-top: 9%;margin-left: -10%;background-color: #24662A;color: rgba(0,0,0,.5);font-size: 1.5em;border-style: solid;">Medium 🍕</button>
-          <button style="width: 50%;height: 10%;border-radius: 2em;position: absolute;margin-top: 15%;margin-left: -10%;background-color: #24662A;color: rgba(0,0,0,.5);font-size: 1.5em;border-style: solid;">Small 🍕</button>
+      <div id="wrapper" style="margin-top: -40%;">
+        <div id="inputs" style="background-image: url(images/photo-1542282811-943ef1a977c3.jpeg); background-repeat:no-repeat;width: 153%;height: 100vh;">
+        <div>
+      <center><form name="input" action="#" method="post" style="margin-left: 16%;background-color:#211e1e;color:white;border-radius:5px;height:81vh;width:450px;">
+        <h1 style="font-family:Cabin Sketch;font-size:80px;">Order</h1>
+        <select class="form-control" id="exampleFormControlSelect1" style="width: 100%;height: 5%;margin-top: -3%;margin-left: -74px;position: absolute;">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+        First name:<input type="text" name="First" placeholder="John"style="font-family:Waiting for the Sunrise;font-size:17px;font-weight:bold;"><br/>
+        Last name:<input type="text" name="lastname" placeholder="Smith"style="font-family:Waiting for the Sunrise;font-size:17px;font-weight:bold"></br> 
+        Email Address:<input type="email" name="email" placeholder="County & Constituency" style="width:50%;height:5%;margin-left:0%;">
+       <br/>
+       <div class="form-group">
+        <label for="exampleFormControlSelect2">Select Pizza Type</label></br>
+          <input type='checkbox' checked>Peperoni</br>
+          <input type='checkbox'>Cappricciosa</br>
+          <input type='checkbox'>Beef</br>
+          <input type='checkbox'>Hauweian</br>
+          <input type='checkbox'>Chicken</br>
+        </select>
       </div>
-    <script src="script.js"></script>
-</body>
+          <p>Pizza toppings (Check all that apply)</p>
+          <input type='checkbox' checked> Crispy
+          <input type='checkbox'>Stuffed
+          <input type='checkbox'>Gluten-free
+          <p>Comments:</br></p>
+            <textarea style="width: 80%; height: 10%;margin-left: -7%;"></textarea>
+            <p></p>
+            <label for="number">Number of Pizza's</label></br>
+            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required="" style="width: 100%;height: 4%;margin-top: 1%;margin-left: -196pxposition: absolute;">
+            <input type="submit" value="Submit" href="#" style="margin-top: 20px;">
+      </form>
+      </div>
+      </div>
+      </body>
+        <script src="script.js"></script>
 </html>
