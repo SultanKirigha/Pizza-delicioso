@@ -1,65 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIZZA-DELICIOSO</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <header class="banner">
-        <div class="banner__overlay">
-          <div class="banner__container">
-            <h1 class="banner__hero">PIZZA-DELICIOSO</h1>
-            <p class="banner__text"style='color:white;font-size:1em;font-weight:bold;'> Yummy pizza all times🤤🤤 </p>
-        </div>
-      </header>
-      
-      <!-- content -->
-      <main>
-        <section class="welcome">
-          <h1 class="welcome__title">Welcome to PIZZA-DELICIOSO</h1>
-      </main>
-      <div id="wrapper" style="margin-top: -40%;">
-        <div id="inputs" style="background-image: url(images/photo-1542282811-943ef1a977c3.jpeg); background-repeat:no-repeat;width: 153%;height: 100vh;">
-        <div>
-      <center><form name="input" action="#" method="post" style="margin-left: 16%;background-color:#211e1e;color:white;border-radius:5px;height:81vh;width:450px;">
-        <h1 style="font-family:Cabin Sketch;font-size:80px;">Order🍕</h1>
-        <select class="form-control" id="exampleFormControlSelect1" style="width: 100%;height: 5%;margin-top: -3%;margin-left: -225px;position: absolute;">
-              <option name="small" id="small" onclick="small">Small </option><option id="priceSmall" style="display: none"name="priceSmall">500ksh</option>
-              <option name="medium"class="medium">Medium<option class="priceMedium"style="display: none"name="priceMedium">1000ksh</option>
-              <option name="large"class="large">Large</option><option class="pricelarge" style="display: none"name="pricelarge">1500ksh</option>
-            </select>
-       <br/>
-       <div class="form-group">
-        <label id="pizzaType"for="exampleFormControlSelect2">Select Pizza Type</br>
-          <input type='checkbox' checked id="pepperoni-btn">Peperoni</br>
-          <input type='checkbox'id="veggie-btn">Veggie</br>
-          <input type='checkbox' id="bbq-beef-btn">Bbq Beef</br>
-          <input type='checkbox'id="hawaiian-btn">Hauweian</br>
-          <input type='checkbox' id="tikka-btn">Chicken Tikka</br>
-        </select>
-        </label>
-      </div>
-          <p>Pizza toppings (Offer toppings are free)</p>
-          <input type='checkbox'name="crispy" checked> Crispy
-          <input type='checkbox'name="stuffed">Stuffed
-          <input type='checkbox'name="gluten">Gluten-free
-          <p>Comments:</br></p>
-            <textarea style="width: 80%; height: 10%;margin-left: -7%;"></textarea>
-            <p></p>
-            <label for="number">Number of Pizza's</label></br>
-            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required="" style="width: 100%;height: 4%;margin-top: 1%;margin-left: -196pxposition: absolute;">
-            <div class="checkBox">
-              <input type="checkbox" name="Delivery">
-              <label for="Delivery"> I want my Pizza Delivered</label>
-            </div></br>
-            <input id="submit" type="submit" value="Submit" href="#" style="margin-top: 20px;">
-      </form>
-      </div>
-      </div>
-      </body>
-        <script src="script.js"></script>
+<html>
+    <head>
+        <title>PIZZA-DELICIOSO</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="style.css" />
+        <script src="shop.html" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            
+            <h1 class="band-name band-name-large">PIZZA-DELICIOSO</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">Size</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Large</span>
+                    <img class="shop-item-image" src="images/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh 1500</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Small</span>
+                    <img class="shop-item-image" src="images/d44d7413-e47a-47d6-b480-65f475c98127.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh500</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Medium</span>
+                    <img class="shop-item-image" src="images/pizza1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh1000</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Pizza Toppings</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veggie</span>
+                    <img class="shop-item-image" src="images/veggie.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh 300</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Bbq Beef</span>
+                        <img class="shop-item-image" src="images/Standard-Pizza-BBQ-Beef.jpg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">ksh 500</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-items">
+                        <div class="shop-item">
+                            <span class="shop-item-title">Hawaiian</span>
+                            <img class="shop-item-image" src="images/hawaiian_pizzas.jpeg">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">ksh 100</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Pepperonni</span>
+                    <img class="shop-item-image" src="images/peparonni.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh 200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">PIZZA-DELICIOSO</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.twiter.com" target="_blank">
+                            <img src="images/twiter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/face.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
