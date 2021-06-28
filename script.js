@@ -13,7 +13,7 @@
 
 //have a varible total to store the prices of the selected items
 
-//loop through each array of objects
+//large = document.getElementById("#large");
 
 //check if the selected item is equal to that element in the array
 
@@ -31,5 +31,21 @@ let Veggie = document.getElementById("#veggie-btn");
 let BbqBeef = document.getElementById("#bbq-beef-btn");
 let Hauweian = document.getElementById("#hawaiian-btn");
 let ChickenTikka = document.getElementById("#tikka-btn");
+let Submit = document.getElementById("#submit");
+
+var sizes = {
+    small: 500,
+    medium :850,
+    large : 1500,
+}
+var pizzaType ={
+    Peparonni:200,
+    Veggie:100,
+    BbqBeef:250,
+    Hauweian:150,
+    ChickenTikka:300,
+}
+var total = 0;
+
 
 

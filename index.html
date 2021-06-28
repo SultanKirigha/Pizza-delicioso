@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZA-DELICIOSO</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="banner">
@@ -27,18 +28,18 @@
       <center><form name="input" action="#" method="post" style="margin-left: 16%;background-color:#211e1e;color:white;border-radius:5px;height:81vh;width:450px;">
         <h1 style="font-family:Cabin Sketch;font-size:80px;">Order🍕</h1>
         <select class="form-control" id="exampleFormControlSelect1" style="width: 100%;height: 5%;margin-top: -3%;margin-left: -225px;position: absolute;">
-              <option name="small" id="small">Small</option><option id="priceSmall" style="display: none"name="priceSmall">500ksh</option>
-              <option name="medium"class="medium">Medium <option class="priceMedium"style="display: none"name="priceMedium">1000ksh</option>
-              <option name="large"class="large">Large </option><option class="pricelarge" style="display: none"name="pricelarge">1500ksh</option>
+              <option name="small" id="small" onclick="small">Small </option><option id="priceSmall" style="display: none"name="priceSmall">500ksh</option>
+              <option name="medium"class="medium">Medium<option class="priceMedium"style="display: none"name="priceMedium">1000ksh</option>
+              <option name="large"class="large">Large</option><option class="pricelarge" style="display: none"name="pricelarge">1500ksh</option>
             </select>
        <br/>
        <div class="form-group">
         <label id="pizzaType"for="exampleFormControlSelect2">Select Pizza Type</br>
           <input type='checkbox' checked id="pepperoni-btn">Peperoni</br>
           <input type='checkbox'id="veggie-btn">Veggie</br>
-          <input type='checkbox' id="bbq-beef-btn">BbqBeef</br>
+          <input type='checkbox' id="bbq-beef-btn">Bbq Beef</br>
           <input type='checkbox'id="hawaiian-btn">Hauweian</br>
-          <input type='checkbox' id="tikka-btn">ChickenTikka</br>
+          <input type='checkbox' id="tikka-btn">Chicken Tikka</br>
         </select>
         </label>
       </div>
