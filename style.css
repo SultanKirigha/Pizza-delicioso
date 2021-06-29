@@ -338,4 +338,7 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
-
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
